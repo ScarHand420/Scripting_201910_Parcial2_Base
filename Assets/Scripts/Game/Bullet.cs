@@ -30,7 +30,10 @@ public class Bullet : MonoBehaviour
 
     private void DestroyObject()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+
+        GameObject op = GameObject.FindGameObjectWithTag("ObjectPool");
+        op.GetComponent<ObjectPoool>().ReleaseObject(gameObject);
     }
 
     private void OnDestroy()

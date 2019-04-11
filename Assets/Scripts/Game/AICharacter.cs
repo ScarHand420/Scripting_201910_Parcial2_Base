@@ -6,4 +6,9 @@
     {
         currentState = newState;
     }
+
+    public void SpawnBullet2()
+    {
+        SpawnBullet();
+    }
 }
