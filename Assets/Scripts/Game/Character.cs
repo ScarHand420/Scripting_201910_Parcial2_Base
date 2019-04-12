@@ -47,14 +47,14 @@ public abstract class Character : MonoBehaviour
         HP = maxHP;
     }
 
-    protected void SpawnBullet()
+    public void SpawnBullet()
     {
         if (bullet != null && bulletSpawnPosition != null)
         {
-            //Instantiate<Bullet>(bullet, bulletSpawnPosition.position, transform.rotation).Shoot(this);
+            Instantiate<Bullet>(bullet, bulletSpawnPosition.position, transform.rotation).Shoot(this);
 
-            GameObject op = GameObject.FindGameObjectWithTag("ObjectPool");
-            op.GetComponent<ObjectPoool>().GetObject("Bullet");
+            //GameObject op = GameObject.FindGameObjectWithTag("ObjectPool");
+            //op.GetComponent<ObjectPoool>().GetObject("Bullet");
         }
     }
 }

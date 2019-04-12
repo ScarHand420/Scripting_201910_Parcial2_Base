@@ -7,7 +7,7 @@ public abstract class State : MonoBehaviour
 
     public abstract void Execute();
 
-    private void SwitchToNextState()
+    public void SwitchToNextState()
     {
         if (nextState != null)
         {
