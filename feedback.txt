@@ -1,0 +1,12 @@
+feedback
+
+Componente Práctico (2.35/ 5.0)
+* El readme no justifica concretamente la estrategia usada, aunque lista ciertas complicaciones a la hora de abordar el problema (no lista por qué un singleton no es necesario sin un game manager). Por cierto, ojo con la ortografía (0.5 / 1.0)
+* Las balas se adminsitran correctamente por medio de un pool (0.4 / 0.4)
+* Los enemigos no se adminsitran por medio de un pool; están instanciados en la escena
+* El enemigo que dispara no ataca correctamente (saca la bala, pero no la dispara), y el kamikaze no hace daño, en efecto, como señala el readme. Adicionalmente, las balas no parecen hacer daño, por lo que no puedo verificar que los enemigos mueran y se instancien por medio de un pool (0.2 / 0.4)
+* No puedo verificar que los enemigos se instancien con un pool (0.0 / 0.7)
+* Los estados no tienen en cuenta las distancias especificadas (0.5 / 1.0)
+* FleeFromPlayer no está implementado. Los otros nodos parecen funcionar bien, Attack no dispara la bala y DoKamikazeAttack no hace daño al jugador (0.75 / 1.5)
+
+Total: 2.35/ 5.0
